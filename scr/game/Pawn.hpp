@@ -1,16 +1,17 @@
 
 #pragma once
 #include "enumPawn.hpp"
+#include "\components\Vector.hpp"
 
 namespace game
 {
-
+  
 class Pawn
 {
 private:
   PawnType pawnType;
   PawnTeam pawnColor;
-  uint8_t  coordinateX, coordinateY;
+  Vector coordinate;
 
 public:
   Pawn();
